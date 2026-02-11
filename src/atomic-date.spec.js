@@ -1,12 +1,8 @@
-import { describe, it, beforeEach } from "node:test";
+import { describe, it } from "node:test";
 import assert from "node:assert";
 import { AtomicDate } from "./atomic-date.js";
 
 describe("AtomicDate", () => {
-  beforeEach(() => {
-    process.env.TZ = "UTC";
-  });
-
   it("should be represented as a number correctly", () => {
     const atomicDate = new AtomicDate("2026-01-11");
     assert.equal(atomicDate, 20260111);

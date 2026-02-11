@@ -5,12 +5,12 @@ export class AtomicDate extends Date {
         return NaN;
       }
 
-      const year = String(this.getFullYear());
+      const year = String(this.getUTCFullYear());
       const month = String(
         // Months are zero-indexed
-        this.getMonth() + 1,
+        this.getUTCMonth() + 1,
       ).padStart(2, "0");
-      const day = String(this.getDate()).padStart(2, "0");
+      const day = String(this.getUTCDate()).padStart(2, "0");
       return Number(year + month + day);
     }
 
