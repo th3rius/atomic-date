@@ -1,6 +1,6 @@
 {
   "name": "atomic-date",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "module",
   "description": "Represent a date as a human-readable integer",
   "repository": "th3rius/atomic-date",
