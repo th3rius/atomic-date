@@ -11,6 +11,6 @@ To convert it back to `Date`:
 
 ```js
 const atomicDate = new AtomicDate("2026-01-11");
-const date = atomicDate.toDate();
+const date = new Date(atomicDate);
 console.log(Number(date)); // 1768089600000
 ```

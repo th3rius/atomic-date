@@ -12,8 +12,4 @@ export class AtomicDate extends Date {
     const day = String(this.getUTCDate()).padStart(2, "0");
     return Number(year + month + day);
   }
-
-  toDate() {
-    return new Date(this);
-  }
 }

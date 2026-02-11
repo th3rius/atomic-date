@@ -14,10 +14,4 @@ describe("AtomicDate", () => {
     // logic works correctly. Note that `NaN` is never equal to itself.
     assert(isNaN(Number(atomicDate)));
   });
-
-  it("should convert back to a date", () => {
-    const atomicDate = new AtomicDate("2026-02-11T20:40:29.565Z");
-    const date = atomicDate.toDate();
-    assert.strictEqual(Number(date), 1770842429565);
-  });
 });
